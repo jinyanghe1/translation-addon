@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>沉浸式英法网页翻译 - Minimal</title>
+    <style>
+      body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, "Helvetica Neue", Arial; margin:0; padding:16px; }
+      .content { max-width:900px; }
+      .sidebar { position:fixed; right:0; top:0; width:320px; height:100%; border-left:1px solid #ddd; background:#fafafa; padding:12px; overflow:auto; }
+      .highlight { background: #fff18a; cursor:pointer; }
+      #floating { position:fixed; z-index:9999; background:#222; color:#fff; padding:8px 10px; border-radius:6px; display:none; }
+      .sample { line-height:1.8; }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>沉浸式英法网页翻译（最小可运行版）</h1>
+      <p class="sample" id="text-block">
+        English sample: The quick brown fox jumps over the lazy dog. Here are some uncommon words: serendipity, ephemeral, quintessential.
+      </p>
+      <p class="sample">
+        French sample: Le renard brun rapide saute par-dessus le chien paresseux. Quelques mots rares: éphémère, quintessence, coquelicot.
+      </p>
+      <p>Instructions: sélectionnez un mot ou une phrase avec la souris pour obtenir une traduction. Les mots rares sont mis en évidence automatiquement.</p>
+    </div>
+
+    <div id="floating"></div>
+    <div class="sidebar" id="sidebar"><strong>Traductions</strong><div id="results"></div></div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

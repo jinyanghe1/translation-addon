@@ -12,3 +12,45 @@
   max-width: 300px;
   word-wrap: break-word;
 }
+
+#immersive-translate-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background: #f9f9f9;
+  border-left: 1px solid #ddd;
+  z-index: 2147483646;
+  overflow-y: auto;
+  padding: 10px;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  font-family: sans-serif;
+  display: none; /* Hidden by default until populated */
+}
+
+.immersive-word-item {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 8px;
+  transition: background-color 0.3s;
+}
+
+.immersive-word-item.immersive-highlight {
+  background-color: #fff3cd; /* Yellow highlight */
+  border-color: #ffeeba;
+}
+
+.immersive-word-original {
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+
+.immersive-word-translation {
+  color: #666;
+  font-size: 13px;
+  margin-top: 4px;
+}

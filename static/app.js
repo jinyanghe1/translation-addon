@@ -31,7 +31,7 @@ document.addEventListener('mouseup', async (ev) => {
   if (!sel) { hideFloating(); return; }
   const x = ev.pageX, y = ev.pageY;
   showFloating(x, y, 'Traduction...');
-  const t = await translate(sel, 'fr');
+  const t = await translate(sel, 'zh');
   showFloating(x, y, t);
   // add to sidebar
   const div = document.createElement('div');
